@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %></title>
+</head>
+<body>
+  
+  <h1><%= content %></h1>
+  <h2>we are learning ejs today</h2>
+
+  <% if (isValid) { %>
+    <h3>This is a true statement</h3>
+    <% } %>
+
+  <% for( let i = 0; i < arrNums.length; i++ ) { %>
+    
+    <h3>
+      <%= arrNums[i] %> 
+    </h3>
+  <% } %>
+
+
+
+  <img src="<%= picture %> ">
+</body>
+</html>
